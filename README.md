@@ -24,7 +24,9 @@ Quick Start
 ```
 docker pull qihaoliu/orbslam2-docker:v2.0
 ```
+
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker2.0-1.jpg" width=700/>
+
 ### Or use Dockerfile to build locally:
 ```
 git clone https://github.com/buaalqh/orbslam-docker.git
@@ -45,7 +47,8 @@ Then open VNC Viewer Desktop and use adress `localhost:5900` to connect. And in 
 
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker2.0-2.jpg" width=500/>
 
-### Connect VNC web port 6080 in browser (ex: `http://192.168.xx.xx:6080/` ): 
+### Connect VNC web port 6080 in browser (ex: http://192.168.xx.xx:6080/ ): 
+
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker2.0-3.jpg" width=700/>
 
 Note: If you would like to protect vnc service by password, set environment variable VNC_PASSWORD, for example
@@ -59,7 +62,9 @@ A prompt will ask password either in the browser or vnc viewer.
 cd /slam/ORB_SLAM2/ORB_SLAM2
 ./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTI04-12.yaml /root/Dataset/04
 ```
+
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker2.0-4.jpg" width=700/>
+
 
 ## End
 

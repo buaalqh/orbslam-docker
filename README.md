@@ -24,6 +24,7 @@ Quick Start
 ```
 docker pull qihaoliu/orbslam2-docker:v1.0
 ```
+
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker1.0-1.jpg" width=700/>
 
 ### Or use Dockerfile to build locally:
@@ -45,12 +46,15 @@ Then open VNC Viewer Desktop and use adress `localhost:5900` to connect. And in 
 (Note: `docker toolbox` in wins, the adress of localhost is a special adress assigned to your docker VM, ex: `http://192.168.xx.xx:5900/`)
 
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker1.0-2.jpg" width=300/>
+
 ### Pangolin routines
 ```
 cd /slam/orbslam2/ORB_SLAM2
 ./Examples/Stereo/stereo_kitti Vocabulary/ORBvoc.txt Examples/Stereo/KITTI04-12.yaml /root/Dataset/04
 ```
+
 <img src="https://github.com/buaalqh/Git-Operation-commands/blob/master/Images/orbslam2-docker1.0-3.jpg" width=700/>
+
 
 ## End
 

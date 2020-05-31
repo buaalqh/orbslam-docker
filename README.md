@@ -29,7 +29,7 @@ docker pull qihaoliu/orbslam2-docker:v1.0
 
 ### Or use Dockerfile to build locally:
 ```
-git clone https://github.com/buaalqh/orbslam-docker.git
+git clone --branch v1.0 https://github.com/buaalqh/orbslam-docker.git
 cd ./orbslam-docker
 docker build -t qihaoliu/orbslam2-docker:v1.0 .
 ```

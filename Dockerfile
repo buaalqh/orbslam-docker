@@ -1,7 +1,7 @@
 FROM dorowu/ubuntu-desktop-lxde-vnc
 MAINTAINER Qihao LIU <qihao.liu@student-cs.fr>
 
-# Install cmake and git in ubuntu 18.04
+# Install cmake and git in ubuntu 20.04-lxde-vnc
 # Get dependencies for Pangolin (logical for visualization and user interface)
 RUN apt-get update && apt-get install -y \
         libglew-dev \

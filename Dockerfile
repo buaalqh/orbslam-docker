@@ -37,7 +37,7 @@ RUN cd /root && \
 	cmake .. && \
     make && make install
 
-#Intsall Eigen3
+#Install Eigen3
 RUN cd /root && \
     wget http://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz -O eigen3.tgz && \
     tar zxvf eigen3.tgz && cd  eigen-eigen-b9cd8366d4e8 && \
@@ -68,13 +68,15 @@ RUN	apt-get update -y && apt-get install -y \
 	useradd -ms /bin/bash ubuntu && echo 'ubuntu:ubuntu' | chpasswd && \
 	echo "ubuntu ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
-
+# configuration remote vnc desktop
+# congifuration Virtual display server
+# start vnc server
 COPY 	x11vnc /etc/init.d/
-COPY 	xvfb /etc/init.d/
-COPY 	entry.sh /
+COPY 	xvfb /etc/init.d/  
+COPY 	entry.sh /  
 
 RUN 	sudo chmod +x /entry.sh /etc/init.d/*
-
+# port for connecting VNC
 EXPOSE 	5900
 
 ENTRYPOINT [ "/entry.sh" ]
